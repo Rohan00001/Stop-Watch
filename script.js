@@ -5,9 +5,9 @@ let hours = 0;
 let running = false;
 
 function updateDisplay() {
-  const h = String(hours);
-  const m = String(minutes);
-  const s = String(seconds);
+  const h = String(hours).padStart(2, '0');
+  const m = String(minutes).padStart(2, '0');
+  const s = String(seconds).padStart(2, '0');
   document.getElementById('display').textContent = `${h}:${m}:${s}`;
 }
 
